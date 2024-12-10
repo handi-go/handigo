@@ -4,26 +4,26 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Handigo - Landing Page</title>
-  <link rel="stylesheet" href="/assets/css/base.css">
+  <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 <body>
   <header>
-    <div class="container-full-width">
-      <div class="navbar">
+    <div class="container">
+      <div class="navbar flex justify-between align-center">
         <div class="brand">
-          <a href="#">Logo</a>
+          <a href="#">Handigo</a>
         </div>
 
         <nav class="main-nav">
-          <ul>
-            <li><a href="#">Home</a></li>
+          <ul role="list" class="flex gap--1">
+            <li><a class="active" href="#">Home</a></li>
             <li><a href="#">Features</a></li>
             <li><a href="#">Contact us</a></li>
           </ul>
         </nav>
 
         <div class="btn-wrapper">
-            <a href="#">Download App</a>
+            <a class="download" href="#">Download App</a>
         </div>
       </div>
     </div>
@@ -31,29 +31,31 @@
 
   <main>
     <!-- Hero Section -->
-    <section class="hero">
-      <div class="container-full-width">
+    <section class="hero grid">
+      <div class="container-full-width grid col-2 align-center">
         <div class="content">
-          <div class="text-heading">
-            <h1>Find Book Relax Quality Craftsmanship Made Simple</h1>
-            <p>At [App Name], we bring a curated selection of the best
+          <div class="text-heading color--white-400">
+            <h1 class="heading--h1 ">Find Book Relax Quality Craftsmanship Made Simple</h1>
+            <p class="paragraph--xl margin--block-50">At [App Name], we bring a curated selection of the best
               craftsmen right to your fingertips. Whether it’s a quick repair
               or a long-term project, you can trust our platform to connect you
               with experienced professionals in your area.
             </p>
           </div>
 
-          <div class="search-wrapper">
-            <div class="search-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" d="m21 21l-4.343-4.343m0 0A8 8 0 1 0 5.343 5.343a8 8 0 0 0 11.314 11.314"/></svg>
-            </div>
+          <div class="search-wrapper flex align-center justify-between gap--1">
+            <div class="search-input-container flex align-center gap--05">
+              <div class="search-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m21 21l-4.343-4.343m0 0A8 8 0 1 0 5.343 5.343a8 8 0 0 0 11.314 11.314"/></svg>
+              </div>
 
-            <div class="input-group">
-              <input type="search" placeholder="Search for your preferred service" id="search">
+              <div class="input-group">
+                <input type="search" placeholder="Search for your preferred service" id="search">
+              </div>
             </div>
 
             <div class="btn-wrapper">
-              <button type="button">Explore</button>
+              <button class="button-default button-primary button-round" type="button">Explore</button>
             </div>
           </div>
         </div>
@@ -65,21 +67,24 @@
     <section class="service">
       <div class="container-full-width">
         <div class="content">
-          <div class="cnt-left">
+          <div class="text-content">
             <div class="text-heading">
-              <h1>We will make you very special with our service</h1>
-              <p>We’re here to make you feel valued and supported every step of the way. Whether it’s through our easy-to-use app, 24/7 customer support, or high-quality services, we’re dedicated to making you feel special</p>
+              <h1 class="heading--h1">We will make you very special with our service</h1>
+              <p class="paragraph--md">We’re here to make you feel valued and supported every step of the way. Whether it’s through our easy-to-use app, 24/7 customer support, or high-quality services, we’re dedicated to making you feel special</p>
             </div>
 
             <div class="btn-wrapper">
-              <button type="button">Explore now</button>
+              <button class="button-default button-primary" type="button">Explore now</button>
             </div>
           </div>
 
-          <div class="cnt-right">
+          <div class="card-content">
             <div class="card-wrapper">
-              <div class="imgage">
-                <img src="#" alt="Secure payment image">
+              <div class="image">
+                <div class="shield">
+                  <div class="checkmark"></div>
+                </div>
+                <img src="/assets/images/landing-page/payment.svg" alt="Secure payment image">
               </div>
 
               <div class="sub-text">
@@ -89,8 +94,8 @@
             </div>
 
             <div class="card-wrapper">
-              <div class="imgage">
-                <img src="#" alt="Booking image">
+              <div class="image">
+                <img src="/assets/images/landing-page/booking.svg" alt="Booking image">
               </div>
 
               <div class="sub-text">
@@ -100,8 +105,8 @@
             </div>
 
             <div class="card-wrapper">
-              <div class="imgage">
-                <img src="#" alt="Track image">
+              <div class="image">
+                <img src="/assets/images/landing-page/track.svg" alt="Track image">
               </div>
 
               <div class="sub-text">
@@ -111,8 +116,8 @@
             </div>
 
             <div class="card-wrapper">
-              <div class="imgage">
-                <img src="#" alt="View Profiles image">
+              <div class="image">
+                <img src="/assets/images/landing-page/view-profile.svg" alt="View Profiles image">
               </div>
 
               <div class="sub-text">
@@ -135,12 +140,12 @@
 
           <div class="cnt-right">
             <div class="text-heading">
-              <h1>Connected with all circles and wherever and whenever</h1>
-              <p>We’ve built a community of reliable artisans across various trades, ensuring that you always have access to skilled experts. From urgent repairs to planned projects, you’re never more than a tap away from help.</p>
+              <h1 class="heading--h1">connected With All Circles And Wherever And Whenever</h1>
+              <p class="paragraph--md">We’ve built a community of reliable artisans across various trades, ensuring that you always have access to skilled experts. From urgent repairs to planned projects, you’re never more than a tap away from help.</p>
             </div>
 
             <div class="btn-wrapper">
-              <button type="button">Explore now</button>
+              <button class="button-default button-primary" type="button">Explore now</button>
             </div>
           </div>
         </div>
@@ -151,13 +156,14 @@
     <section class="testimonial">
       <div class="container-full-width">
         <div class="content">
-          <div class="text-heading">
-            <h2>What Our Customers Have To Say</h2>
-            <p>Here's what our customers say</p>
+          <div class="text-heading text-align-center">
+            <h2 class="heading--h2">What Our Customers</h2>
+            <h2 class="heading--h2">Have To Say</h2>
+            <p class="paragraph--sm">Here's what our customers say</p>
           </div>
 
-          <div class="card-container">
-            <div class="card-wrapper">
+          <div class="card-container flex gap--2">
+            <div class="card-wrapper flex flex-column gap--4">
               <div class="quote">
                 <img src="/assets/images/landing-page/span.icon.svg" alt="quote image">
               </div>
@@ -168,7 +174,7 @@
                 </p>
               </div>
 
-              <div class="name-icon">
+              <div class="name-icon flex justify-between align-center">
                 <div class="name">
                   <span>Emily R.</span>
                   <p>Apartment Renter</p>
@@ -180,7 +186,7 @@
               </div>
             </div>
 
-            <div class="card-wrapper">
+            <div class="card-wrapper flex flex-column gap--4">
               <div class="quote">
                 <img src="/assets/images/landing-page/span.icon.svg" alt="quote image">
               </div>
@@ -191,7 +197,7 @@
                 </p>
               </div>
 
-              <div class="name-icon">
+              <div class="name-icon flex justify-between align-center">
                 <div class="name">
                   <span>Sophia L.</span>
                   <p>Business Owner</p>
@@ -211,20 +217,21 @@
     <section class="faq">
       <div class="container-full-width">
         <div class="content">
-          <div class="text-heading">
-            <h2>Frequently Asked Questions</h2>
-            <h2>FAQ</h2>
-            <p>Our browser faq below, if you can't find the answer, Contact Us</p>
+          <div class="text-heading text-align-center">
+            <h2 class="heading--h2">Frequently Asked Questions</h2>
+            <h2 class="heading--h2">FAQ</h2>
+            <p class="paragraph--sm">Our browser faq below, if you can't find the answer, Contact Us</p>
           </div>
 
           <div class="card-container">
             <div class="card-wrapper">
-              <div class="question-icon">
+              <div class="question-icon active">
                 <span class="Question">Are there any hidden fees?</span>
                 <span>
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g fill-rule="evenodd"><path d="M24 0v24H0V0zM12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.019-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z"/><path fill="#fff" d="M11.293 8.293a1 1 0 0 1 1.414 0l5.657 5.657a1 1 0 0 1-1.414 1.414L12 10.414l-4.95 4.95a1 1 0 0 1-1.414-1.414z"/></g></svg>                </span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g fill-rule="evenodd"><path d="M24 0v24H0V0zM12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.019-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z"/><path fill="#000" d="M11.293 8.293a1 1 0 0 1 1.414 0l5.657 5.657a1 1 0 0 1-1.414 1.414L12 10.414l-4.95 4.95a1 1 0 0 1-1.414-1.414z"/></g></svg>
+                </span>
               </div>
-              <div class="answer">
+              <div class="answer" style="display: block;">
                 <p>No, we believe in transparent pricing. You’ll see a full breakdown of costs before you confirm your booking.</p>
               </div>
             </div>
@@ -233,9 +240,9 @@
               <div class="question-icon">
                 <span class="Question">What happens if the artisan doesn’t show up?</span>
                 <span>
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g fill-rule="evenodd"><path d="M24 0v24H0V0zM12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.019-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z"/><path fill="#fff" d="M11.293 8.293a1 1 0 0 1 1.414 0l5.657 5.657a1 1 0 0 1-1.414 1.414L12 10.414l-4.95 4.95a1 1 0 0 1-1.414-1.414z"/></g></svg>                </span>
-              </div>
-              <div class="answer">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0zM12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.019-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z"/><path fill="#000" d="M11.293 8.293a1 1 0 0 1 1.414 0l5.657 5.657a1 1 0 0 1-1.414 1.414L12 10.414l-4.95 4.95a1 1 0 0 1-1.414-1.414z"/></g></svg>              </div>
+                </span>
+                  <div class="answer">
                 <p>No, we believe in transparent pricing. You’ll see a full breakdown of costs before you confirm your booking.</p>
               </div>
             </div>
@@ -244,8 +251,9 @@
               <div class="question-icon">
                 <span class="Question">How do I pay for services?</span>
                 <span>
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g fill-rule="evenodd"><path d="M24 0v24H0V0zM12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.019-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z"/><path fill="#fff" d="M11.293 8.293a1 1 0 0 1 1.414 0l5.657 5.657a1 1 0 0 1-1.414 1.414L12 10.414l-4.95 4.95a1 1 0 0 1-1.414-1.414z"/></g></svg>                </span>
-              </div>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0zM12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.019-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z"/><path fill="#000" d="M11.293 8.293a1 1 0 0 1 1.414 0l5.657 5.657a1 1 0 0 1-1.414 1.414L12 10.414l-4.95 4.95a1 1 0 0 1-1.414-1.414z"/></g></svg>                </span>
+                </span>
+                </div>
               <div class="answer">
                 <p>No, we believe in transparent pricing. You’ll see a full breakdown of costs before you confirm your booking.</p>
               </div>
@@ -255,8 +263,9 @@
               <div class="question-icon">
                 <span class="Question">Can I cancel or reschedule a booking?</span>
                 <span>
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g fill-rule="evenodd"><path d="M24 0v24H0V0zM12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.019-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z"/><path fill="#fff" d="M11.293 8.293a1 1 0 0 1 1.414 0l5.657 5.657a1 1 0 0 1-1.414 1.414L12 10.414l-4.95 4.95a1 1 0 0 1-1.414-1.414z"/></g></svg>                </span>
-              </div>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0zM12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.019-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z"/><path fill="#000" d="M11.293 8.293a1 1 0 0 1 1.414 0l5.657 5.657a1 1 0 0 1-1.414 1.414L12 10.414l-4.95 4.95a1 1 0 0 1-1.414-1.414z"/></g></svg>
+                </span>
+                </div>
               <div class="answer">
                 <p>No, we believe in transparent pricing. You’ll see a full breakdown of costs before you confirm your booking.</p>
               </div>
@@ -266,8 +275,9 @@
               <div class="question-icon">
                 <span class="Question">Is my information secure on the platform?</span>
                 <span>
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g fill-rule="evenodd"><path d="M24 0v24H0V0zM12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.019-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z"/><path fill="#fff" d="M11.293 8.293a1 1 0 0 1 1.414 0l5.657 5.657a1 1 0 0 1-1.414 1.414L12 10.414l-4.95 4.95a1 1 0 0 1-1.414-1.414z"/></g></svg>                </span>
-              </div>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0zM12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.019-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z"/><path fill="#000" d="M11.293 8.293a1 1 0 0 1 1.414 0l5.657 5.657a1 1 0 0 1-1.414 1.414L12 10.414l-4.95 4.95a1 1 0 0 1-1.414-1.414z"/></g></svg>
+                </span>
+                </div>
               <div class="answer">
                 <p>No, we believe in transparent pricing. You’ll see a full breakdown of costs before you confirm your booking.</p>
               </div>
@@ -277,7 +287,8 @@
               <div class="question-icon">
                 <span class="Question">What types of services are available?</span>
                 <span>
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g fill-rule="evenodd"><path d="M24 0v24H0V0zM12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.019-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z"/><path fill="#fff" d="M11.293 8.293a1 1 0 0 1 1.414 0l5.657 5.657a1 1 0 0 1-1.414 1.414L12 10.414l-4.95 4.95a1 1 0 0 1-1.414-1.414z"/></g></svg>                </span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0zM12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.019-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z"/><path fill="#000" d="M11.293 8.293a1 1 0 0 1 1.414 0l5.657 5.657a1 1 0 0 1-1.414 1.414L12 10.414l-4.95 4.95a1 1 0 0 1-1.414-1.414z"/></g></svg>
+                </span>
               </div>
               <div class="answer">
                 <p>No, we believe in transparent pricing. You’ll see a full breakdown of costs before you confirm your booking.</p>
@@ -289,21 +300,21 @@
     </section>
 
     <!-- News Letter -->
-    <section class="new-letter">
+    <section class="news-letter">
       <div class="container-full-width">
         <div class="content">
-          <div class="text-heading">
-            <h2>Subscribe to our Newsletter</h2>
+          <div class="text-heading text-align-center">
+            <h2 class="heading--h2">Subscribe to our Newsletter</h2>
           </div>
 
           <form action="#">
-            <div class="input-group-subscribe-button">
+            <div class="input-group-subscribe-button flex justify-center gap--2">
               <div class="input-group">
                 <input id="newsLetter" type="email" placeholder="Enter your email" required>
               </div>
 
               <div class="btn-wrapper">
-                <button type="submit">Subscribe now</button>
+                <button class="button-default button-primary" type="submit">Subscribe now</button>
               </div>
             </div>
           </form>
@@ -317,36 +328,36 @@
     <div class="container-full-width">
       <div class="content">
         <div class="footer-brand">
-          <a href="#">Logo</a>
-        </div>
-      </div>
-
-      <div class="footer-nav">
-        <ul>
-          <li><a href="#">Overview</a></li>
-          <li><a href="#">Features</a></li>
-          <li><a href="#">FAQs</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Help</a></li>
-          <li><a href="#">Privacy</a></li>
-        </ul>
-      </div>
-
-      <div class="hr">
-        <hr>
-      </div>
-
-      <div class="copy-right-container">
-        <div class="all-righ-reserved">
-          <p>&copy; 2024 LOGO. All rights reserved.</p>
+          <a href="#">Handigo</a>
         </div>
 
-        <div class="privacy-policy-links">
-          <ul>
-            <li><a href="#">Terms</a></li>
+        <div class="footer-nav">
+          <ul role="list" class="flex flex-wrap gap--1">
+            <li><a href="#">Overview</a></li>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">FAQs</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Help</a></li>
             <li><a href="#">Privacy</a></li>
-            <li><a href="#">Cookies</a></li>
           </ul>
+        </div>
+
+        <div class="hr">
+          <hr>
+        </div>
+
+        <div class="copy-right-container flex justify-between align-center">
+          <div class="all-righ-reserved">
+            <p>&copy; 2024 Handigo. All rights reserved.</p>
+          </div>
+
+          <div class="privacy-policy-links">
+            <ul role="list" class="flex gap--1 flex-wrap">
+              <li><a href="#">Terms</a></li>
+              <li><a href="#">Privacy</a></li>
+              <li><a href="#">Cookies</a></li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>

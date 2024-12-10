@@ -1,5 +1,5 @@
 /* General CSS */
-@import url("/css/reset.css");
+@import url("/assets/css/resets.css");
 
 /* Variable */
 :root {
@@ -7,9 +7,10 @@
     --primary-clr-400: #124096;
     --primary-clr-400-80: #124096CC;
     --primary-clr-400-60: #12409699;
+    --primary-clr-400-20: #12409633;
+
     --primary-clr-10: #1240961A;
     --primary-clr-5: #1240960D;
-
     --primary-clr-100: #262626;
 
 
@@ -34,7 +35,7 @@
 
     /* Sizes */
     --size-1: 0.1rem;
-    --size-1: 0.2rem;
+    --size-2: 0.2rem;
     --size-3: 0.3rem;
     --size-5: 0.5rem;
     --size-08: 0.8rem;
@@ -46,6 +47,7 @@
     --size-18: 1.8rem;
     --size-1875: 1.875rem;
     --size-20: 2rem;
+    --size-22: 2.2rem;
     --size-24: 2.4rem;
     --size-25: 2.5rem;
     --size-29: 2.9rem;
@@ -79,6 +81,7 @@
     --size-100: 10rem;
     --size-120: 12rem;
     --size-200: 20rem;
+    --size-250: 25rem;
     --size-270: 27rem;
     --size-300: 30rem;
 }
@@ -108,7 +111,7 @@ button {
 
 .container-full-width {
   width: 100%;
-  max-width: 1200px;
+  /* max-width: 1200px; */
   margin: 0 auto;
   padding: var(--size-45) var(--size-100);
 }
@@ -183,6 +186,11 @@ button {
   align-items: stretch;
 }
 
+.text-align-center {
+  text-align: center;
+}
+
+
 /* Grid + Flex Example Utilities */
 .flex-grid-center {
   display: grid;
@@ -195,6 +203,11 @@ button {
 /* Global element */
 [class^="heading--h"] {
   font-weight: 600;
+  color: #262626;
+}
+
+[class^="paragraph--"] {
+  color: #636262;
 }
 
 .heading--h1{
@@ -231,6 +244,25 @@ button {
 .paragraph--xl {
   font-size: var(--size-20);
   line-height: var(--size-30);
+}
+
+/* Utils */
+
+.color--primary{
+  color: var(--cl-primary-400);
+}
+
+.color--secondary{
+  color: var(--cl-secondary-400);
+}
+
+.color--white-400{
+  color: var(--clr-white-400);
+}
+
+/* Spacing */
+.margin--block-50 {
+  margin-block: clamp(1rem, 3rem, 3rem);
 }
 
 /* Spacing */
