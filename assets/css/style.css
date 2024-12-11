@@ -46,7 +46,12 @@ header .download {
     border-radius: var(--size-10);
 }
 
+header .download:hover {
+    background-color: var(--primary-clr-400-80);
+}
+
 .hero {
+    display: grid;
     position: relative;
     min-height: 93vh;
     background-color: var(--primary-clr-400-80);
@@ -75,8 +80,6 @@ header .download {
 
 .hero .content {
     flex: 1;
-    align-self: center;
-    justify-self: center;
     position: relative;
     z-index: 2
 }
@@ -90,6 +93,34 @@ header .download {
     background-color: var(--clr-white-400);
     border-radius: var(--size-50);
     padding: var(--size-10) var(--size-20);
+    gap: var(--size-10);
+    width: 100%;
+}
+
+.hero .search-wrapper .search-input-container,
+.hero .search-wrapper .search-input-container .input-group {
+    flex: 1;
+}
+
+.hero .search-wrapper .search-input-container {
+    display: flex;
+    align-items: center;
+}
+
+.hero .search-wrapper .btn-wrapper,
+.hero .search-wrapper .search-icon {
+    flex: 0 0 auto;
+}
+
+.hero .search-wrapper .search-input-container .search-icon{
+    min-width: var(--size-28);
+}
+
+.hero .search-wrapper .btn-wrapper {
+    width: var(--size-120);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .hero svg path{
@@ -97,24 +128,16 @@ header .download {
     stroke: var(--clr-grey-100);
 }
 
-.hero input{
+.hero input {
     font-family: roboto-regular;
     font-size: var(--size-16);
     line-height: 1.875rem;
     font-weight: 400;
     color: var(--clr-black-300);
+    padding: var(--size-08) var(--size-14);
     width: 100%;
-    min-width: 520px;
-    /* min-width: clamp(0.5rem, 520px 900px); */
     border: none;
-    padding: var(--size-08) var(--size-14);
-
-    max-width: 900px;
-    /* min-width: 0; */
-    /* min-width: 300px; */
-    /* width: clamp(300px, 100%, 900px); */
-    border: none;
-    padding: var(--size-08) var(--size-14);
+    background-color: transparent;
 }
 
 .hero input:active,
