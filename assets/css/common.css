@@ -99,14 +99,11 @@ button {
   transition: background-color var(--transition-speed);
 }
 
-/* Layout CSS: Containers, Grids, and Flexbox Utilities */
-
 /* Container */
 .container {
-  width: 90%;
-  max-width: 1200px;
+  width: 94%;
   margin: 0 auto;
-  padding: 1rem;
+  padding: var(--size-10) 0;
 }
 
 .container-full-width {
