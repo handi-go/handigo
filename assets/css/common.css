@@ -37,6 +37,7 @@
     --size-1: 0.1rem;
     --size-2: 0.2rem;
     --size-3: 0.3rem;
+    --size-4: 0.4rem;
     --size-5: 0.5rem;
     --size-08: 0.8rem;
     --size-10: 1rem;
@@ -77,6 +78,7 @@
     --size-66: 6.6rem;
     --size-70: 7rem;
     --size-72: 7.2rem;
+    --size-80: 8rem;
     --size-95: 9.5rem;
     --size-100: 10rem;
     --size-120: 12rem;
@@ -398,13 +400,18 @@ button {
   border-radius: var(--size-08);
 }
 
+[class^="button-"]:hover {
+  cursor: pointer;
+}
+
 .button-primary {
   background-color: var(--primary-clr-400-80);
   color: var(--clr-white-400);
+  transition: background-color 0.3s ease-in-out;
 }
 
 .button-primary:hover {
-  background-color: var(--primary-clr-400-60);
+  background-color: var(--primary-clr-400);
 }
 
 .button-primary:pressed {
